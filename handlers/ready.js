@@ -1,5 +1,11 @@
 const { timezone, rules } = require("../config");
-const CronJob = require("cron").CronJob;
+const { CronJob } = require("cron");
+
+const getRandomInt = (min, max) => {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min) + min);
+};
 
 class CronBot {
   constructor(client, rule) {
@@ -7,20 +13,15 @@ class CronBot {
     this.rule = rule;
   }
 
-  getRandomInt(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min) + min);
-  }
-
   getChannelIds() {
-    if (this.rule.sendPolicy === "all") {
-      return this.rule.channelIds;
-    }
-
-    if (this.rule.sendPolicy === "random") {
-      const randomIndex = this.getRandomInt(0, this.rule.channelIds.length);
-      return [this.rule.channelIds[randomIndex]];
+    switch (this.rule.sendPolicy) {
+      case "random": {
+        const randomIndex = getRandomInt(0, this.rule.channelIds.length);
+        return [this.rule.channelIds[randomIndex]];
+      }
+      case "all":
+      default:
+        return this.rule.channelIds;
     }
   }
 
@@ -44,17 +45,14 @@ class CronBot {
 module.exports = async (client) => {
   console.log("cron: ready");
 
-  rules.forEach(
-    (rule) =>
-      new CronJob(
-        rule.cronExpression,
-        () => {
-          const bot = new CronBot(client, rule);
-          bot.sendMessage();
-        },
-        null,
-        true,
-        timezone
-      )
-  );
+  rules.forEach((rule) => {
+    const bot = new CronBot(client, rule);
+    new CronJob(
+      rule.cronExpression,
+      () => bot.sendMessage(),
+      null,
+      true,
+      timezone
+    );
+  });
 };

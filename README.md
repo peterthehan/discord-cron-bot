@@ -4,6 +4,10 @@
 
 A Discord bot that sends messages on a schedule using cron expressions.
 
+<div align="center">
+  <img src="https://raw.githubusercontent.com/peterthehan/assets/master/repositories/discord-cron-bot/cron.gif" />
+</div>
+
 ## Setup
 
 1. Follow the instructions in [create-discord-bot](https://github.com/peterthehan/create-discord-bot).
