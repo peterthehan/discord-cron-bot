@@ -2,102 +2,165 @@
   "timezone": "America/Los_Angeles",
   "rules": [
     {
+      "cronExpression": "0 0 */6 * * *",
+      "channelPolicy": "random",
+      "messagePolicy": "single",
       "channelIds": [
         "258167954913361930",
-        "418990932399226882",
         "264627745177206786",
         "419681885166239744",
+        "747319121582096434",
         "755818716641624104",
         "266041562033553408",
-        "755136985856737321",
-        "747319121582096434"
+        "765411104372817990",
+        "778290367980240896",
+        "755136985856737321"
       ],
-      "sendPolicy": "random",
-      "cronExpression": "0 30 */3 * * *",
-      "content": "Vote by reacting with ⭐ on any message to nominate it for the <#752760008483012639>!",
-      "embeds": []
-    },
-    {
-      "channelIds": ["418990932399226882", "755818716641624104"],
-      "sendPolicy": "all",
-      "cronExpression": "0 0 9 * * 3",
-      "content": "",
-      "embeds": [
+      "messages": [
         {
-          "description": "It is Wednesday, my dudes",
-          "image": {
-            "url": "https://raw.githubusercontent.com/peterthehan/assets/master/wednesday/bpwednesday.png"
-          }
+          "content": "Vote by reacting with ⭐ on any message to nominate it for the <#752760008483012639>!"
         }
       ]
     },
     {
-      "channelIds": ["418990932399226882"],
-      "sendPolicy": "all",
-      "cronExpression": "0 30 7 * * *",
-      "content": "",
-      "embeds": [
+      "cronExpression": "0 30 8 * * 3",
+      "channelPolicy": "single",
+      "messagePolicy": "single",
+      "channelIds": ["755818716641624104"],
+      "messages": [
         {
-          "author": {
-            "name": "Donate",
-            "url": "https://discord.gg/WjEFnzC",
-            "icon_url": "https://cdn.discordapp.com/avatars/206161807491072000/0f6781d4abf525885c40780a294387da.webp"
-          },
-          "fields": [
-            { "name": "Patreon", "value": "https://patreon.com/peterthehan" },
-            { "name": "Ko-fi", "value": "https://ko-fi.com/peterthehan" },
-            { "name": "Venmo", "value": "https://venmo.com/peterthehan" },
-            { "name": "PayPal", "value": "https://paypal.me/peterthehan" }
-          ]
-        }
-      ]
-    },
-    {
-      "channelIds": ["418990932399226882"],
-      "sendPolicy": "all",
-      "cronExpression": "0 30 8 * * *",
-      "content": "",
-      "embeds": [
-        {
-          "author": {
-            "name": "Referrals",
-            "url": "https://discord.gg/WjEFnzC",
-            "icon_url": "https://cdn.discordapp.com/avatars/206161807491072000/0f6781d4abf525885c40780a294387da.webp"
-          },
-          "fields": [
-            { "name": "Mint Mobile", "value": "http://fbuy.me/pDJGn" },
-            { "name": "Google Pay", "value": "https://g.co/paypromo/GR49N3QZ" },
-            { "name": "Uber Eats", "value": "eats-peterh22294ue" },
-            { "name": "Lyft", "value": "PETER46806" },
+          "embeds": [
             {
-              "name": "Robinhood",
-              "value": "https://join.robinhood.com/peterh808"
+              "description": "It is Wednesday, my dudes",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/wednesday/bpwednesday.png"
+              }
             }
           ]
         }
       ]
     },
     {
-      "channelIds": ["418990932399226882"],
-      "sendPolicy": "all",
-      "cronExpression": "0 30 18 * * *",
-      "content": "",
-      "embeds": [
+      "cronExpression": "0 30 8 * * 3",
+      "channelPolicy": "single",
+      "messagePolicy": "single",
+      "channelIds": ["266041562033553408"],
+      "messages": [
         {
-          "author": {
-            "name": "Follow",
-            "url": "https://discord.gg/WjEFnzC",
-            "icon_url": "https://cdn.discordapp.com/avatars/206161807491072000/0f6781d4abf525885c40780a294387da.webp"
-          },
-          "fields": [
+          "embeds": [
             {
-              "name": "Twitter",
-              "value": "https://twitter.com/PeterTheHan\nhttps://twitter.com/NoContextWeeb"
-            },
-            { "name": "GitHub", "value": "https://github.com/peterthehan" },
+              "description": "It is Wednesday, my dudes",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/wednesday/seimeiwednesday.png"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cronExpression": "0 15 */6 * * *",
+      "channelPolicy": "random",
+      "messagePolicy": "single",
+      "channelIds": [
+        "755818716641624104",
+        "266041562033553408",
+        "765411104372817990",
+        "778290367980240896",
+        "755136985856737321"
+      ],
+      "messages": [
+        {
+          "embeds": [
             {
-              "name": "MyAnimeList",
-              "value": "https://myanimelist.net/profile/PeterTheHan"
+              "author": {
+                "name": "Donate",
+                "url": "https://discord.gg/WjEFnzC",
+                "icon_url": "https://cdn.discordapp.com/avatars/206161807491072000/0f6781d4abf525885c40780a294387da.webp"
+              },
+              "fields": [
+                {
+                  "name": "Patreon",
+                  "value": "https://patreon.com/peterthehan"
+                },
+                { "name": "Ko-fi", "value": "https://ko-fi.com/peterthehan" },
+                { "name": "Venmo", "value": "https://venmo.com/peterthehan" },
+                { "name": "PayPal", "value": "https://paypal.me/peterthehan" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cronExpression": "0 30 */6 * * *",
+      "channelPolicy": "random",
+      "messagePolicy": "single",
+      "channelIds": [
+        "755818716641624104",
+        "266041562033553408",
+        "765411104372817990",
+        "778290367980240896",
+        "755136985856737321"
+      ],
+      "messages": [
+        {
+          "embeds": [
+            {
+              "author": {
+                "name": "Referrals",
+                "url": "https://discord.gg/WjEFnzC",
+                "icon_url": "https://cdn.discordapp.com/avatars/206161807491072000/0f6781d4abf525885c40780a294387da.webp"
+              },
+              "fields": [
+                { "name": "Mint Mobile", "value": "http://fbuy.me/pDJGn" },
+                {
+                  "name": "Google Pay",
+                  "value": "https://g.co/paypromo/GR49N3QZ"
+                },
+                { "name": "Uber Eats", "value": "eats-peterh22294ue" },
+                { "name": "Lyft", "value": "PETER46806" },
+                {
+                  "name": "Robinhood",
+                  "value": "https://join.robinhood.com/peterh808"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cronExpression": "0 45 */6 * * *",
+      "channelPolicy": "random",
+      "messagePolicy": "single",
+      "channelIds": [
+        "755818716641624104",
+        "266041562033553408",
+        "765411104372817990",
+        "778290367980240896",
+        "755136985856737321"
+      ],
+      "messages": [
+        {
+          "embeds": [
+            {
+              "author": {
+                "name": "Follow",
+                "url": "https://discord.gg/WjEFnzC",
+                "icon_url": "https://cdn.discordapp.com/avatars/206161807491072000/0f6781d4abf525885c40780a294387da.webp"
+              },
+              "fields": [
+                {
+                  "name": "Twitter",
+                  "value": "https://twitter.com/PeterTheHan\nhttps://twitter.com/NoContextWeeb"
+                },
+                { "name": "GitHub", "value": "https://github.com/peterthehan" },
+                {
+                  "name": "MyAnimeList",
+                  "value": "https://myanimelist.net/profile/PeterTheHan"
+                }
+              ]
             }
           ]
         }

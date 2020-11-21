@@ -13,15 +13,15 @@ class CronBot {
     this.rule = rule;
   }
 
-  getChannelIds() {
-    switch (this.rule.sendPolicy) {
-      case "random": {
-        const randomIndex = getRandomInt(0, this.rule.channelIds.length);
-        return [this.rule.channelIds[randomIndex]];
-      }
+  applyPolicyToList(policy, list) {
+    switch (policy) {
       case "all":
+        return list;
+      case "random":
+        return [list[getRandomInt(0, list.length)]];
+      case "single":
       default:
-        return this.rule.channelIds;
+        return [list[0]];
     }
   }
 
@@ -34,10 +34,19 @@ class CronBot {
       : webhooks.first();
   }
 
-  sendMessage() {
-    this.getChannelIds().forEach(async (channelId) => {
+  sendMessages() {
+    const channelIds = this.applyPolicyToList(
+      this.rule.channelPolicy,
+      this.rule.channelIds
+    );
+    const messages = this.applyPolicyToList(
+      this.rule.messagePolicy,
+      this.rule.messages
+    );
+
+    channelIds.forEach(async (channelId) => {
       const webhook = await this.getWebhook(channelId);
-      webhook.send(this.rule.content, { embeds: this.rule.embeds });
+      messages.forEach(async (message) => await webhook.send(message));
     });
   }
 }
@@ -49,7 +58,7 @@ module.exports = async (client) => {
     const bot = new CronBot(client, rule);
     new CronJob(
       rule.cronExpression,
-      () => bot.sendMessage(),
+      () => bot.sendMessages(),
       null,
       true,
       timezone

@@ -12,11 +12,11 @@ A Discord bot that sends messages on a schedule using cron expressions.
 
 1. Follow the instructions in [create-discord-bot](https://github.com/peterthehan/create-discord-bot).
 
-> Don't forget to give your bot the `Manage Webhooks` permission!
+   > Don't forget to give your bot the `Manage Webhooks` permission!
 
 2. Download this widget and add it into the [src/widgets](https://github.com/peterthehan/create-discord-bot/tree/master/app/src/widgets) folder.
 
-> npm i -s cron@^1.8.2 to install this widget's dependencies.
+   > npm i -s cron@^1.8.2 to install this widget's dependencies.
 
 3. Open [config.json](https://github.com/peterthehan/discord-cron-bot/blob/master/config.json) to configure your own settings:
 
@@ -25,12 +25,22 @@ A Discord bot that sends messages on a schedule using cron expressions.
   "timezone": "America/Los_Angeles",
   "rules": [
     {
-      "channelIds": ["CHANNEL_1_ID", "CHANNEL_2_ID"],
-      "sendPolicy": "all",
-      "cronExpression": "0 30 */3 * * *",
-      "content": "Hello World from content!",
-      "embeds": [
-        { "description": "Hello World from embed!" }
+      "cronExpression": "0 0 */6 * * *",
+      "channelPolicy": "random",
+      "messagePolicy": "single",
+      "channelIds": [
+        "CHANNEL_ID_1",
+        "CHANNEL_ID_2",
+        // ...Add as many channel IDs as you want.
+      ],
+      "messages": [
+        {
+          "content": "Test message 1"
+        },
+        {
+          "content": "Test message 2"
+        },
+        // ...Add as many messages as you want.
       ]
     },
     // ...Add as many rules as you want.
@@ -39,21 +49,25 @@ A Discord bot that sends messages on a schedule using cron expressions.
 ```
 
 - `timezone` is the timezone you wish to localize your `cronExpression` to.
-- `channelIds` are the text channels you want your message to be forwarded to.
-- `sendPolicy` **must** be one of the following strings:
-  - `all`: Sends the message to every channel in `channelIds`.
-  - `random`: Sends the message to a single random channel in `channelIds`.
-- `cronExpression` is interval at which the messages are sent.
-- `content` is the message sent to Discord. Leave as an empty string if you wish to not send a message.
-- `embeds` is the list of embeds sent to Discord. Leave as an empty array if you wish to not send embeds.
-
-  Some useful tools:
-
-  - [Moment Timezone](https://momentjs.com/timezone) - find your `timezone` string.
-  - [crontab guru](https://crontab.guru) - build your `cronExpression`. Note that the tool does not support seconds but this bot configuration does.
-  - [Embed Visualizer](https://leovoel.github.io/embed-visualizer) - visualize your message content and embeds. Switch to `webhook` mode first.
+- `cronExpression` is the interval at which messages are sent.
+- `channelPolicy` **must** be one of the following strings:
+  - `all`: Sends to every channel in `channelIds`.
+  - `random`: Sends to a single random channel in `channelIds`.
+  - `single`: Sends to a single channel in `channelIds`.
+- `messagePolicy` **must** be one of the following strings:
+  - `all`: Sends all messages in `messages`.
+  - `random`: Sends a single random message in `messages`.
+  - `single`: Sends a single message in `messages`.
+- `channelIds` are the text channel(s) you want your message(s) to be forwarded to.
+- `messages` is a list of [WebhookMessageOptions](https://discord.js.org/#/docs/main/master/typedef/WebhookMessageOptions) objects.
 
 4. `npm start` to run the bot.
+
+Some useful tools:
+
+- [Moment Timezone](https://momentjs.com/timezone): find your `timezone` string.
+- [crontab guru](https://crontab.guru): build your `cronExpression`. Note that the tool does not support seconds but this bot configuration does.
+- [Embed Visualizer](https://leovoel.github.io/embed-visualizer): visualize your message content and embeds. Switch to `webhook` mode first.
 
 Visit for more help or information!
 
