@@ -2,6 +2,19 @@
   "timezone": "America/Los_Angeles",
   "rules": [
     {
+      "cronExpression": "39 39 * * * *",
+      "channelPolicy": "single",
+      "messagePolicy": "single",
+      "reactionPolicy": "single",
+      "channelIds": ["747319121582096434"],
+      "messages": [
+        {
+          "content": "<@&785794153089990688>, hourly reminder to hydrate!"
+        }
+      ],
+      "reactions": ["🥤"]
+    },
+    {
       "cronExpression": "0 0 */6 * * *",
       "channelPolicy": "random",
       "messagePolicy": "single",
@@ -19,42 +32,6 @@
       "messages": [
         {
           "content": "Vote by reacting with ⭐ on any message to nominate it for the <#752760008483012639>!"
-        }
-      ]
-    },
-    {
-      "cronExpression": "0 30 8 * * 3",
-      "channelPolicy": "single",
-      "messagePolicy": "single",
-      "channelIds": ["755818716641624104"],
-      "messages": [
-        {
-          "embeds": [
-            {
-              "description": "It is Wednesday, my dudes",
-              "image": {
-                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/wednesday/bpwednesday.png"
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "cronExpression": "0 30 8 * * 3",
-      "channelPolicy": "single",
-      "messagePolicy": "single",
-      "channelIds": ["266041562033553408"],
-      "messages": [
-        {
-          "embeds": [
-            {
-              "description": "It is Wednesday, my dudes",
-              "image": {
-                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/wednesday/seimeiwednesday.png"
-              }
-            }
-          ]
         }
       ]
     },

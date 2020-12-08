@@ -28,6 +28,7 @@ A Discord bot that sends messages on a schedule using cron expressions.
       "cronExpression": "0 0 */6 * * *",
       "channelPolicy": "random",
       "messagePolicy": "single",
+      "reactionPolicy": "single",
       "channelIds": [
         "CHANNEL_ID_1",
         "CHANNEL_ID_2",
@@ -41,6 +42,11 @@ A Discord bot that sends messages on a schedule using cron expressions.
           "content": "Test message 2"
         },
         // ...Add as many messages as you want.
+      ],
+      "reactions": [
+        "EMOJI_1",
+        "EMOJI_2",
+        // ...Add as many emojis as you want.
       ]
     },
     // ...Add as many rules as you want.
@@ -53,13 +59,36 @@ A Discord bot that sends messages on a schedule using cron expressions.
 - `channelPolicy` **must** be one of the following strings:
   - `all`: Sends to every channel in `channelIds`.
   - `random`: Sends to a single random channel in `channelIds`.
-  - `single`: Sends to a single channel in `channelIds`.
+  - `single`: Sends to the first channel in `channelIds`.
 - `messagePolicy` **must** be one of the following strings:
   - `all`: Sends all messages in `messages`.
   - `random`: Sends a single random message in `messages`.
-  - `single`: Sends a single message in `messages`.
+  - `single`: Sends the first message in `messages`.
+- `reactionPolicy` **must** be one of the following strings:
+  - `all`: Reacts with all emojis in `reactions` on the sent message(s).
+  - `random`: Reacts with a single random emoji in `reactions` on the sent message(s).
+  - `single`: Reacts with the first emoji in `reactions` on the sent message(s).
 - `channelIds` are the text channel(s) you want your message(s) to be forwarded to.
 - `messages` is a list of [WebhookMessageOptions](https://discord.js.org/#/docs/main/master/typedef/WebhookMessageOptions) objects.
+- `reactions` is a list of emojis. An emoji can be:
+
+  - A unicode emoji. https://emojipedia.org is a good reference to copy and paste from.
+
+  ```
+  "emojiRoleMap": {
+    "😳": ["ROLE_1_ID"],
+    "🥺": ["ROLE_2_ID"]
+  }
+  ```
+
+  - An emoji ID for custom emojis. You can get a custom emoji's ID by sending `\:YourCustomEmoji:` in chat (prefix a backslash `\` character in front of your desired emoji).
+
+  ```
+  "emojiRoleMap": {
+    "716344914706694165": ["ROLE_1_ID"],
+    "622635442013208589": ["ROLE_2_ID"]
+  }
+  ```
 
 4. `npm start` to run the bot.
 

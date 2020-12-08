@@ -14,6 +14,10 @@ class CronBot {
   }
 
   applyPolicyToList(policy, list) {
+    if (!policy || !list || list.length === 0) {
+      return [];
+    }
+
     switch (policy) {
       case "all":
         return list;
@@ -43,10 +47,19 @@ class CronBot {
       this.rule.messagePolicy,
       this.rule.messages
     );
+    const reactions = this.applyPolicyToList(
+      this.rule.reactionPolicy,
+      this.rule.reactions
+    );
 
     channelIds.forEach(async (channelId) => {
       const webhook = await this.getWebhook(channelId);
-      messages.forEach(async (message) => await webhook.send(message));
+
+      messages.forEach(async (message) => {
+        const newMessage = await webhook.send(message);
+
+        reactions.forEach(async (reaction) => await newMessage.react(reaction));
+      });
     });
   }
 }
