@@ -75,19 +75,13 @@ A Discord bot that sends messages on a schedule using cron expressions.
   - A unicode emoji. https://emojipedia.org is a good reference to copy and paste from.
 
   ```
-  "emojiRoleMap": {
-    "😳": ["ROLE_1_ID"],
-    "🥺": ["ROLE_2_ID"]
-  }
+  "😳", "🥺", // etc
   ```
 
   - An emoji ID for custom emojis. You can get a custom emoji's ID by sending `\:YourCustomEmoji:` in chat (prefix a backslash `\` character in front of your desired emoji).
 
   ```
-  "emojiRoleMap": {
-    "716344914706694165": ["ROLE_1_ID"],
-    "622635442013208589": ["ROLE_2_ID"]
-  }
+  "716344914706694165", "622635442013208589", // etc
   ```
 
 4. `npm start` to run the bot.
