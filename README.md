@@ -21,7 +21,7 @@ A Discord bot that sends messages on a schedule using cron expressions.
 
    > npm i -s cron@^1.8.2 to install this widget's dependencies.
 
-3. Open [config.json](https://github.com/peterthehan/discord-cron-bot/blob/master/config.json) to configure your own settings:
+3. Open [config.json](https://github.com/peterthehan/discord-cron-bot/blob/master/src-discord-cron-bot/config.json) to configure your own settings:
 
    ```json
    {
