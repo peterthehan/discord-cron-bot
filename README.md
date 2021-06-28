@@ -76,7 +76,7 @@ A Discord bot that sends messages on a schedule using cron expressions.
        "716344914706694165", "622635442013208589", // etc
        ```
 
-   Some useful tools:
+   Some useful resources:
 
    - [Moment Timezone](https://momentjs.com/timezone): find your `timezone` string.
    - [crontab guru](https://crontab.guru): build your `cronExpression`. Note that the tool does not support seconds but this bot configuration does.
