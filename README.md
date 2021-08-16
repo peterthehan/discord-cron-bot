@@ -19,7 +19,7 @@ A Discord bot that sends messages on a schedule using cron expressions.
 
 2. Download this bot and move the `src-discord-cron-bot` folder into the [/src/bots](https://github.com/peterthehan/create-discord-bot/tree/master/src/bots) folder from step 1.
 
-   > Run `npm i cron@^1.8.2` to install this bot's dependencies.
+   > Run `npm i cron@^1.8.2` and `npm i -D @types/cron@^1.7.3` to install this bot's dependencies.
 
 3. Open [config.json](./src-discord-cron-bot/config.json) to configure your own settings:
 
