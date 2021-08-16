@@ -9,24 +9,23 @@
       "channelIds": ["747319121582096434"],
       "messages": [
         {
-          "content": "<@&785794153089990688>, hourly reminder to hydrate!"
+          "content": "<@&785794153089990688>, hourly hydration reminder!"
         }
       ],
       "reactions": ["🥤"]
     },
     {
-      "cronExpression": "0 0 */6 * * *",
+      "cronExpression": "0 0 */8 * * *",
       "channelPolicy": "random",
       "messagePolicy": "single",
       "channelIds": [
-        "258167954913361930",
+        "418990932399226882",
         "264627745177206786",
         "419681885166239744",
         "747319121582096434",
         "755818716641624104",
         "266041562033553408",
         "765411104372817990",
-        "778290367980240896",
         "755136985856737321"
       ],
       "messages": [
@@ -36,14 +35,49 @@
       ]
     },
     {
-      "cronExpression": "0 15 */6 * * *",
+      "cronExpression": "0 30 8 * * 3",
+      "channelPolicy": "single",
+      "messagePolicy": "single",
+      "channelIds": ["755818716641624104"],
+      "messages": [
+        {
+          "embeds": [
+            {
+              "description": "It is Wednesday, my dudes",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/wednesday/bpwednesday.png"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cronExpression": "0 30 8 * * 3",
+      "channelPolicy": "single",
+      "messagePolicy": "single",
+      "channelIds": ["266041562033553408"],
+      "messages": [
+        {
+          "embeds": [
+            {
+              "description": "It is Wednesday, my dudes",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/wednesday/seimeiwednesday.png"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cronExpression": "0 15 */8 * * *",
       "channelPolicy": "random",
       "messagePolicy": "single",
       "channelIds": [
         "755818716641624104",
         "266041562033553408",
         "765411104372817990",
-        "778290367980240896",
         "755136985856737321"
       ],
       "messages": [
@@ -70,14 +104,13 @@
       ]
     },
     {
-      "cronExpression": "0 30 */6 * * *",
+      "cronExpression": "0 30 */8 * * *",
       "channelPolicy": "random",
       "messagePolicy": "single",
       "channelIds": [
         "755818716641624104",
         "266041562033553408",
         "765411104372817990",
-        "778290367980240896",
         "755136985856737321"
       ],
       "messages": [
@@ -93,10 +126,13 @@
                 { "name": "Mint Mobile", "value": "http://fbuy.me/pDJGn" },
                 {
                   "name": "Google Pay",
-                  "value": "https://g.co/paypromo/GR49N3QZ"
+                  "value": "https://g.co/payinvite/ap29r4l"
                 },
                 { "name": "Uber Eats", "value": "eats-peterh22294ue" },
-                { "name": "Lyft", "value": "PETER46806" },
+                {
+                  "name": "Lyft",
+                  "value": "https://www.lyft.com/i/PETER46806"
+                },
                 {
                   "name": "Robinhood",
                   "value": "https://join.robinhood.com/peterh808"
@@ -108,14 +144,13 @@
       ]
     },
     {
-      "cronExpression": "0 45 */6 * * *",
+      "cronExpression": "0 45 */8 * * *",
       "channelPolicy": "random",
       "messagePolicy": "single",
       "channelIds": [
         "755818716641624104",
         "266041562033553408",
         "765411104372817990",
-        "778290367980240896",
         "755136985856737321"
       ],
       "messages": [
@@ -138,6 +173,1282 @@
                   "value": "https://myanimelist.net/profile/PeterTheHan"
                 }
               ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cronExpression": "0 0 16 * * *",
+      "channelPolicy": "single",
+      "messagePolicy": "single",
+      "channelIds": ["418990932399226882"],
+      "messages": [
+        {
+          "username": "Sakurafish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish.png"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cronExpression": "0 10 16 * * *",
+      "channelPolicy": "single",
+      "messagePolicy": "random",
+      "channelIds": ["755818716641624104"],
+      "messages": [
+        {
+          "username": "Amiyafish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/ak/amiyafish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "BluePoisonfish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/ak/bluepoisonfish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Castlefish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/ak/castlefish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Cliffheartfish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/ak/cliffheartfish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Cuorafish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/ak/cuorafish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "DeepColorfish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/ak/deepcolorfish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Durinfish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/ak/durinfish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Ethanfish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/ak/ethanfish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Exusiaifish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/ak/exusiaifish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Fangfish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/ak/fangfish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Firewatchfish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/ak/firewatchfish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Fishmontis",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/ak/fishmontis.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Gravelfish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/ak/gravelfish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Gummyfish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/ak/gummyfish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Hibiscusfish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/ak/hibiscusfish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Hoshigumafish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/ak/hoshigumafish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Jessicafish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/ak/jessicafish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Kroosfish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/ak/kroosfish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Lancetfish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/ak/lancetfish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Magallanfish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/ak/magallanfish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Mayfish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/ak/mayfish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Moussefish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/ak/moussefish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Nianfish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/ak/nianfish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Nightingalefish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/ak/nightingalefish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "ProjektRedfish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/ak/projektredfish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Ptilopsisfish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/ak/ptilopsisfish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Purestreamfish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/ak/purestreamfish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Reedfish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/ak/reedfish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Scenefish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "E v e r y  d a y  u n t i l  y o u  l i k e  i t .",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/ak/scenefish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Schwarzfish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/ak/schwarzfish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Shawfish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Everydayuntilyoulikeit.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/ak/shawe2fish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Shawfish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Everydayuntilyoulikeit.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/ak/shawfish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Shiningfish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/ak/shiningfish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Shiningfish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/ak/shiningsummerfish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Shirayukifish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/ak/shirayukifish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Skadifish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/ak/skadifish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Sorafish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/ak/sorafish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Specterfish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/ak/specterfish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Spotfish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/ak/spotfish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Swirefish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/ak/swirefish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Vermeilfish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/ak/vermeilfish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Vignafish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/ak/vignafish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Yatofish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/ak/yatofish.png"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cronExpression": "0 20 16 * * *",
+      "channelPolicy": "single",
+      "messagePolicy": "random",
+      "channelIds": ["266041562033553408"],
+      "messages": [
+        {
+          "username": "Borgosfish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/cq/borgosfish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "D'Artagnanfish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/cq/dartfish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Fergusfish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/cq/cheffergusfish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Hallafish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/cq/hallafish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Jackfish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/cq/jackfish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Kaorifish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/cq/kaorifish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Korinfish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/cq/korinfish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Leefish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/cq/leefish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Soltarfish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/cq/soltarfish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Teresafish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/cq/teresafish.png"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cronExpression": "0 30 16 * * *",
+      "channelPolicy": "single",
+      "messagePolicy": "random",
+      "channelIds": ["765411104372817990"],
+      "messages": [
+        {
+          "username": "Albedofish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/gi/albedofish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Amberfish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/gi/amberfish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Barbarafish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/gi/barbarafish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Beidoufish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/gi/beidoufish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Bennettfish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/gi/bennettfish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Chongyunfish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/gi/chongyunfish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Dilucfish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/gi/dilucfish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Dionafish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/gi/dionafish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Fischlfish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/gi/fischlfish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Ganyufish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/gi/ganyufish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Hu Taofish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/gi/hutaofish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Jeanfish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/gi/jeanfish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Kaeyafish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/gi/kaeyafish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Keqingfish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/gi/keqingfish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Kleefish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/gi/kleefish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Lisafish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/gi/lisafish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Monafish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/gi/monafish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Ningguangfish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/gi/ningguangfish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Noellefish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/gi/noellefish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Qiqifish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/gi/qiqifish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Razorfish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/gi/razorfish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Sucrosefish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/gi/sucrosefish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Tartagliafish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/gi/tartagliafish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Travelerfish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/gi/travelerffish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Travelerfish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/gi/travelermfish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Ventifish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/gi/ventifish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Xianglingfish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/gi/xianglingfish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Xiaofish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/gi/xiaofish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Xingqiufish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/gi/xingqiufish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Xinyanfish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/gi/xinyanfish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Zhonglifish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/gi/zhonglifish.png"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cronExpression": "0 40 16 * * *",
+      "channelPolicy": "single",
+      "messagePolicy": "random",
+      "channelIds": ["755136985856737321"],
+      "messages": [
+        {
+          "username": "416fish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/gfl/416fish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "AK47fish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/gfl/ak47fish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "CMSfish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/gfl/cmsfish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Coltfish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/gfl/coltfish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "CZ75fish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/gfl/cz75fish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "FALfish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/gfl/falfish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Fish7",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/gfl/fish7.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "FishMOD",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/gfl/fishmod.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Helianfish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/gfl/helianfish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Hunterfish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/gfl/hunterfish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Kalinafish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/gfl/kalinafish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Kryugerfish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/gfl/kryugerfish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "M9fish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/gfl/m9fish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "MDRfish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/gfl/mdrfish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Rescuefish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/gfl/rescuefish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "SATfish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/gfl/satfish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "SOPfish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/gfl/sopfish.png"
+              }
+            }
+          ]
+        },
+        {
+          "username": "Vectorfish",
+          "avatarURL": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/sakurafish_avatar.png",
+          "embeds": [
+            {
+              "description": "Every day until you like it.",
+              "image": {
+                "url": "https://raw.githubusercontent.com/peterthehan/assets/master/fish/gfl/vectorfish.png"
+              }
             }
           ]
         }
