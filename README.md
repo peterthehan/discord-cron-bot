@@ -1,6 +1,6 @@
 # Discord Cron Bot
 
-[![Discord](https://discordapp.com/api/guilds/258167954913361930/embed.png)](https://discord.gg/WjEFnzC) [![Twitter Follow](https://img.shields.io/twitter/follow/peterthehan.svg?style=social)](https://twitter.com/peterthehan)
+[![Discord](https://discord.com/api/guilds/258167954913361930/embed.png)](https://discord.gg/WjEFnzC) [![Twitter Follow](https://img.shields.io/twitter/follow/peterthehan.svg?style=social)](https://twitter.com/peterthehan)
 
 A Discord bot that sends messages on a schedule using cron expressions.
 
@@ -17,11 +17,11 @@ A Discord bot that sends messages on a schedule using cron expressions.
 
    > Don't forget to give your bot the `Manage Webhooks` permission!
 
-2. Download this widget and move the `src-discord-cron-bot` folder into the [src/widgets/](https://github.com/peterthehan/create-discord-bot/tree/master/app/src/widgets) folder created in step 1.
+2. Download this bot and move the `src-discord-cron-bot` folder into the [/src/bots](https://github.com/peterthehan/create-discord-bot/tree/master/src/bots) folder from step 1.
 
-   > npm i -s cron@^1.8.2 to install this widget's dependencies.
+   > Run `npm i cron@^1.8.2` and `npm i -D @types/cron@^1.7.3` to install this bot's dependencies.
 
-3. Open [config.json](https://github.com/peterthehan/discord-cron-bot/blob/master/src-discord-cron-bot/config.json) to configure your own settings:
+3. Open [config.json](./src-discord-cron-bot/config.json) to configure your own settings:
 
    ```json
    {
@@ -87,5 +87,5 @@ A Discord bot that sends messages on a schedule using cron expressions.
 Visit for more help or information!
 
 <a href="https://discord.gg/WjEFnzC">
-  <img src="https://discordapp.com/api/guilds/258167954913361930/embed.png?style=banner2" title="Discord Server"/>
+  <img src="https://discord.com/api/guilds/258167954913361930/embed.png?style=banner2" title="Discord Server"/>
 </a>
