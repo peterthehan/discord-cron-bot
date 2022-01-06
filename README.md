@@ -61,7 +61,7 @@ A Discord bot that sends messages on a schedule using cron expressions.
      - `random`: Reacts with a single random emoji in `reactions` on the sent message(s).
      - `single`: Reacts with the first emoji in `reactions` on the sent message(s).
    - `channelIds` are the text channel(s) you want your message(s) to be forwarded to.
-   - `messages` is a list of [WebhookMessageOptions](https://discord.js.org/#/docs/main/master/typedef/WebhookMessageOptions).
+   - `messages` is a list of [WebhookMessageOptions](https://discord.js.org/#/docs/main/stable/typedef/WebhookMessageOptions).
    - `reactions` is a list of emojis. An emoji can be:
 
      - A unicode emoji. https://emojipedia.org is a good reference to copy and paste from.
